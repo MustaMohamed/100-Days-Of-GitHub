@@ -40,16 +40,24 @@
     <br/>
     <!-------------------------------------->
     <h3>Deleted {del} tags</h3>
-    <p>This make<del>Text</del>looks like it deleted by {del} tag.</p>
+    <p>This make
+        <del>Text</del>
+        looks like it deleted by {del} tag.
+    </p>
     <br/>
     <!-------------------------------------->
     <h3>Underlined word {ins} tags</h3>
-    <p>This make<ins>Text</ins>underlined by {ins} tag.</p>
-    <br />
+    <p>This make
+        <ins>Text</ins>
+        underlined by {ins} tag.
+    </p>
+    <br/>
     <!-------------------------------------->
     <h3>Quotes block {blockquote} and {q} tags</h3>
     <div>
-        This make<blockquote>Text</blockquote>a quote block section by {blockquote} tag, and <q>This</q> by {q} tag.
+        This make
+        <blockquote>Text</blockquote>
+        a quote block section by {blockquote} tag, and <q>This</q> by {q} tag.
     </div>
 
     <br/>
@@ -93,15 +101,30 @@
     <hr/>
 
     <h1>Forms</h1>
-    <hr/>
-
-    <h1>Input Types</h1>
-    <hr/>
-
-    <h1>Select and Options</h1>
-    <hr/>
-
-    <h1>Tables</h1>
+    <form action="form_submit.php" method="post">
+        <fieldset>
+            <legend>Bio:</legend>
+            First name:<br>
+            <input type="text" name="first-name"
+                   value="John" placeholder="Please enter your first name here"><br>
+            Last name:<br>
+            <input type="text" name="last-name"
+                   value="Doe" placeholder="Please enter your last name here"><br><br>
+            <label>Favorite sport:</label><br>
+            <select name="op">
+                <option value="soccer">Soccer
+                </option>
+                <option value="tennis">Tennis
+                </option>
+                <option value="golf">Golf
+                </option>
+            </select>
+            <br />
+            <label>Description:</label>
+            <textarea name="description"></textarea>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
     <hr/>
 
     <h1>HTML5 new tags</h1>
@@ -110,5 +133,5 @@
     <h1>Char Set</h1>
     <hr/>
 
-</body>
+    </body>
 </html>
