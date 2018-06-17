@@ -1,7 +1,7 @@
 # 100-Days-Of-GitHub
 
-## HTML Branch
+## CSS Branch
 
-Practice on pure HTML code. 
+Practice on pure CSS code. 
 
-#### First dir is a reference for all HTML tags and it's usage and attributes
+#### First dir is a reference for all CSS rules and it's usage
