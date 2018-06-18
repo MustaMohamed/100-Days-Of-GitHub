@@ -1,0 +1,223 @@
+
+/**
+*   the main syntax of css
+*   h1 { color: red; }
+*   |1|   |2|   |3|
+*
+*   1 => selector: the target element to be styled
+*   2 => property: the property to be change or style
+*   3 => value: the value of the property to be
+*/
+
+
+/**
+*   using the external file to style the #index.html file
+*/
+
+/**
+*    color semantic => to get a color can use {
+*        #color name: red - green - blue - etc;
+*        #color Hexadecimal value: #00ff00 - #0000ff - #ff00ff - etc;
+*        #color RGB Or RGBA: rgb(red-value, green-value, blue-value) -
+*            rgba(red-value, green-value, blue-value, opacity-value);
+*    }
+*/
+
+body {
+  /**
+      background-color => change the background color of the target element
+      color => change the text color in that element
+  */
+  background-color: #f4f4f4;
+  color: #555555;
+
+  /**
+  *    font-family => change the font in the target element,
+  *        can use maltiple fonts to avoid the errors
+  *        like: {the font isn't exist on that PC, then use the second one, etc}
+  *        // extra: search for "web safe fonts";
+  */
+  font-family: Arial, Helvetica, sans-serif;
+
+  /**
+  *    font-size => change the size of the font in the target element
+  *        the default value of the font-size = 16px;
+  *    you can use different ways to add value
+  *        using: {(numper)px; - (percent: 0->100)% - (number)em - (number)rem}
+  */
+  font-size: 16px;
+
+  /**
+  *    font-weight => change the weight of the font
+  *    you can use values(100 - 200 - 300 -....- 900) or
+  *        use words (lighter - normal - bold - bolder)
+  *        the default value is (normal)
+  */
+  font-weight: bold;
+
+  /**********************************************************************************
+  **    we can use (font) Shorthand like that:
+  **    font: font-style font-variant font-weight font-size/line-height font-family;
+  **    //example:
+  **        font: italic small-caps normal 13px/150% Arial, Helvetica, sans-serif;
+  **    //note :
+  **        You need to supply at least font-size and font-family for the shorthand to work
+  **        otherwise it'll just be a syntax error and do nothing
+  ***********************************************************************************/
+
+  /**
+  *    line-height => the height of the line
+  *    you can use different ways to add value
+  *        using: {(number)px; - (percent: 0->100)% - (number)em - (number)rem}
+  */
+  line-height: 1.6em;
+  margin: 0;
+}
+
+
+.container {
+  /**
+  *    margin => the outer space between the outer elements and element borders
+*	 using: {(numper)px; - (percent: 0->100)% - (number)em - (number)rem}
+*	 	 margin-top/margin-right/margin-bottom/margin-left
+*	 //example:
+*	 	 margin-top: 15px; margin-left: 20px;
+*	 we can use (margin) Shorthand like that:
+*	 	 margin: (top)px (right)px (bottom)px (left)px;
+*	 	 margin: (top&bottom)px (left&right)px;
+*	 //note:
+*	 	 margin: auto => makes the margin equal for the selected sizes
+  */
+  margin: auto;
+
+  width: 80%;
+
+}
+.box-1 {
+  /**
+    *    padding => the inner space between inner element content and borders
+  *	 using: {(numper)px; - (percent: 0->100)% - (number)em - (number)rem}
+  *	 	 padding-top/padding-right/padding-bottom/padding-left
+  *	 //example:
+  *	 	 padding-top: 15px; padding-left: 20px;
+  *	 we can use (padding) Shorthand like that:
+  *	 	 padding: (top)px (right)px (bottom)px (left)px;
+  *	 	 padding: (top&bottom)px (left&right)px;
+    */
+  padding: 15px;
+
+  background-color: #333;
+  color: #fff;
+
+  /**
+  *    border => the line space between inner element space and outer space
+*	 using: {(numper)px; - (percent: 0->100)% - (number)em - (number)rem}
+*	 	 border-top/border-right/border-bottom/border-left
+*	 //example:
+*	 	 border-top: 15px red dotted; border-left: 20px red solid;
+*	 we can use (border) Shorthand like that:
+  *	 	 border:  border-width || border-style || color
+  *    //note:
+  *        there are other properties related to border like
+  *        border-width/border-style/border-radius...etc
+*	 // extra: search for "border style"
+  */
+  border: 5px red solid;
+}
+
+/**
+*    target inner element in a element
+*    selector innter-selector {//style}
+*    //example:
+*        div h1{//style}
+*    style the every h1 in div element
+*
+*/
+.box-1 h1{
+  font-family: tahoma;
+  font-weight: 800;
+  font-style: italic;
+  /**
+      text styling
+  */
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  word-spacing: 1em;
+}
+
+
+.box-2 {
+  border: 3px dotted #ccc;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.categories {
+  border: 2px #ccc solid;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.categories h2 {
+  text-align: center;
+  color: #2a2a2a;
+}
+
+.categories ul {
+  padding-left: 20px;
+  /**
+      ul styling
+  */
+  list-style: none;
+}
+.categories li {
+  padding: 8px 0;
+  border-bottom: dotted 2px #333;
+  /*
+      style the list icon
+      list-style-image: url('link');;
+  */
+}
+
+a {
+  text-decoration: none;
+  color: #a5cada;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: green;
+}
+a:visited {
+  color: blue;
+}
+
+.my-form {
+  padding: 20px;
+}
+
+.form-group {
+  padding-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+}
+
+.my-form input[type="text"], .my-form textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+
+.button:hover {
+  background-color: red;
+}

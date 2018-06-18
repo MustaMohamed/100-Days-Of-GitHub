@@ -3,12 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="author" content="Musta">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="keyword" content="web design, web design practice, HTML, CSS">
   <title>CSS Basics</title>
+
+
+  <!-- using internal Styling -->
+  <style type="text/css">
+    h2 {
+      color: blue;
+    }
+  </style>
+
+
+  <!-- using external styling -->
+  <!--
+      link => link the css file to the html file
+      rel => relation betweet the 2 files
+      type => type of the file
+      href = > the path of the target file
+  -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-  
+  <!-- first method to add css style to html element = inline style -->
+  <h1 style="color: red;">Hello World - using inline style</h1> <hr>
+
+  <!-- second method to add css style to html element = internal style -->
+  <h2>Hello World - using internal style</h2> <hr>
+
+  <!-- third method to add css style to html element = external style -->
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+     Commodi possimus fuga reprehenderit tempore harum neque consequuntur eos debitis,
+     velit, veritatis sed earum quasi tenetur? Neque cum animi quod vel ab.</p>
+
+
+  <!-- Todo:  ID/CLASS Description -->
+  <!--
+      CLASS => an element that has a spacific styling rules and may be repeted
+      ID => an element that has a spacific styling rules and it's unique can't be repeted
+  -->
+  <!-- Todo: Box-Model Description -->
+  <!--
+      Box-Model =>
+          width/height - padding - borders - margin
+  -->
+
+
+  <div class="container">
+    <div class="box-1">
+      <h1>From the container {box-1}</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab cumque ad esse minima beatae, officiis magni obcaecati hic, tempore fugit doloremque perspiciatis accusantium, dignissimos placeat! Eius laborum placeat veniam officia!</p>
+    </div>
+
+    <div class="box-2">
+      <h1>From the container {box-1}</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab cumque ad esse minima beatae, officiis magni obcaecati hic,
+         tempore fugit doloremque perspiciatis accusantium, dignissimos placeat! Eius laborum placeat veniam officia!</p>
+    </div>
+
+    <div class="categories">
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="#">Category 1</a></li>
+        <li>
+          <a href="#">Category 2</a>
+        </li>
+        <li>
+          <a href="#">Category 3</a>
+        </li>
+        <li>
+          <a href="#">Category 4</a>
+        </li>
+        <li>
+          <a href="abc">Category 5</a>
+        </li>
+      </ul>
+    </div>
+
+    <form class="my-form">
+      <div class="form-group">
+        <label>Name: </label>
+        <input type="text" name="name">
+      </div>
+      <div class="form-group">
+        <label>E-mail: </label>
+        <input type="text" name="email">
+      </div>
+      <div class="form-group">
+        <label>Name: </label>
+        <textarea name="message"></textarea>
+      </div>
+      <input type="submit" class="button" value="Submit">
+    </form>
+
+
+  </div>
+
+
+  <!-- stop at 45:18  -->
+
+  <div style="margin-top: 600px;"></div>
 </body>
 </html>
