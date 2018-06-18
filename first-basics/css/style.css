@@ -220,4 +220,77 @@ a:visited {
 
 .button:hover {
   background-color: red;
+  cursor: pointer;
+}
+
+.my-form input[type="submit"] {
+  width: 100%;
+}
+
+.clr {
+  clear: both;
+}
+
+.block {
+  border: 1px solid #555;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.3%;
+  float: left;
+  padding: 15px;
+}
+
+.main-block {
+  float: left;
+  width: 70%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+#side-bar {
+  float: right;
+  width: 30%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 15px;
+}
+
+.parent-box {
+  border: 2px solid #333333;
+  margin-top: 50px;
+  height: 400px;
+  position: relative;
+}
+
+.parent-box h3 {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+}
+
+.fix {
+  position: fixed;
+  top: 300px;
+}
+
+.my-list li:first-child {
+  background-color: red;
+}
+
+.my-list li:last-child {
+  background-color: blue;
+}
+
+.my-list li:nth-child(5) {
+  background-color: green;
+}
+
+.my-list li:nth-child(even) {
+  background-color: yellow;
 }
