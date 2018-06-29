@@ -1,0 +1,85 @@
+body, html {
+  margin: 0;
+  font-size: 16px;
+  font-family: SansSerif, monospace;
+  font-weight: 400;
+  line-height: 1.6em;
+  color: #666;
+  height: 100%;
+}
+
+.pimg1 {
+  background-image: url('../images/05.jpg');
+  min-height: 100%;
+}
+
+.pimg4 {
+  background-image: url('../images/11.jpg');
+  min-height: 100%;
+}
+
+.pimg2 {
+  background-image: url('../images/01.jpg');
+  min-height: 500px;
+}
+
+.pimg3 {
+  background-image: url('../images/08.jpg');
+  min-height: 500px;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4 {
+  position: relative;
+  opacity: 0.7;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.sec-light {
+  background: #f4f4f4;
+  color: #666666;
+}
+
+.sec-dark {
+  background: #282e34;
+  color: #dddddd;
+}
+
+.text-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  letter-spacing: 8px;
+  font-size: 28px;
+  text-transform: uppercase;;
+}
+
+.text-content .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.text-content .border.trans {
+  background-color: transparent;
+}
+
+/* Media */
+
+@media (max-width: 568px) {
+  .pimg1,
+  .pimg2,
+  .pimg3,
+  .pimg4 {
+    background-attachment: scroll;
+  }
+}
